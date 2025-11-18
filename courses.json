@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "HTML & CSS para Iniciantes",
+    "thumb": "https://images.unsplash.com/photo-1526378722803-9bd5a0c7a9ff?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b6f7d9b5a7e1c2d",
+    "category": "Front-end",
+    "duration": "6h",
+    "level": "Iniciante",
+    "description": "Aprenda as bases do HTML e CSS com projetos práticos para construir páginas responsivas."
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Moderno (ES6+)",
+    "thumb": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3a6f8c9a1e5d6f7a",
+    "category": "Front-end",
+    "duration": "8h",
+    "level": "Intermediário",
+    "description": "Conceitos modernos do JavaScript, manipulação do DOM, fetch API, promessas e async/await."
+  },
+  {
+    "id": 3,
+    "title": "React do Zero",
+    "thumb": "https://images.unsplash.com/photo-1526378722803-9bd5a0c7a9ff?q=80&w=801&auto=format&fit=crop&ixlib=rb-4.0.3&s=a8b1f2e5c0a7d1b2",
+    "category": "Front-end",
+    "duration": "10h",
+    "level": "Intermediário",
+    "description": "Componentes, estado, hooks e melhores práticas para construir aplicações reais com React."
+  },
+  {
+    "id": 4,
+    "title": "Acessibilidade Web (a11y)",
+    "thumb": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5c2a6b5b6e7c4d1f",
+    "category": "Front-end",
+    "duration": "3h",
+    "level": "Iniciante",
+    "description": "Práticas para tornar sites acessíveis: aria, semântica e navegação por teclado."
+  },
+  {
+    "id": 5,
+    "title": "CSS Avançado: Layouts e Animações",
+    "thumb": "https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c7f5a3b2a1c4d5e",
+    "category": "Front-end",
+    "duration": "7h",
+    "level": "Avançado",
+    "description": "Grid, Flexbox avançado, máscaras, filtros e animações profissionais com CSS."
+  }
+]
