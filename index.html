@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkillBoost — Cursos Front-end</title>
+  <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">SB</div>
+        <div>
+          <h1>SkillBoost</h1>
+          <small>Aprenda. Pratique. Cresça.</small>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <input id="search-input" class="search" placeholder="Procurar cursos..." />
+        <button id="theme-toggle" class="icon-btn" title="Alternar tema">🌗</button>
+        <a href="favorites.html" class="btn ghost">Favoritos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-left">
+        <h2>Domine o Front-end em projetos reais</h2>
+        <p>Catálogo de cursos prático com exercícios, projetos e módulos organizados.</p>
+        <div class="hero-ctas">
+          <a href="#catalog" class="btn primary">Ver cursos</a>
+          <a href="favorites.html" class="btn">Meus favoritos</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9e9d6b9d5b8b9b3b" alt="hero" />
+      </div>
+    </section>
+
+    <section id="catalog" class="section">
+      <div class="section-head">
+        <h3>Cursos em destaque</h3>
+        <div class="controls">
+          <select id="filter-level" class="select">
+            <option value="all">Todos os níveis</option>
+            <option value="Iniciante">Iniciante</option>
+            <option value="Intermediário">Intermediário</option>
+            <option value="Avançado">Avançado</option>
+          </select>
+          <select id="sort-by" class="select">
+            <option value="popular">Mais populares</option>
+            <option value="new">Mais novos</option>
+            <option value="duration">Duração</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="carousel" class="carousel card">
+        <button class="carousel-prev" aria-label="anterior">‹</button>
+        <div class="carousel-track"></div>
+        <button class="carousel-next" aria-label="próximo">›</button>
+      </div>
+
+      <div id="course-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> SkillBoost — Feito para portfólio</div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
