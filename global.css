@@ -1,0 +1,84 @@
+/* Global (simples e moderno) */
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #0b1220;
+  --muted: #6b7280;
+  --primary: #007bff;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(11,18,32,0.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+/* Header */
+.site-header{background:transparent;padding:12px 0;border-bottom:1px solid rgba(11,18,32,0.04)}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#0056b3);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.logo-link{display:flex;text-decoration:none;color:inherit}
+.header-actions{display:flex;gap:10px;align-items:center}
+.search{padding:8px 12px;border-radius:10px;border:1px solid rgba(11,18,32,0.06);min-width:220px}
+.select{padding:8px;border-radius:8px;border:1px solid rgba(11,18,32,0.06)}
+
+/* Buttons */
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(11,18,32,0.06);background:transparent;cursor:pointer}
+.btn.primary{background:var(--primary);color:white;border:none}
+.btn.ghost{background:transparent;border:1px solid rgba(11,18,32,0.06)}
+.icon-btn{background:transparent;border:none;font-size:18px;cursor:pointer}
+
+/* Hero */
+.hero{display:flex;gap:20px;align-items:center;padding:18px}
+.hero-right img{width:300px;height:200px;object-fit:cover;border-radius:10px}
+.hero-left h2{margin:0 0 8px 0}
+.hero-ctas{margin-top:12px;display:flex;gap:8px;align-items:center}
+
+/* Grid */
+.section{margin-top:22px}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+
+/* Card / Course card */
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.course-card{display:flex;flex-direction:column;gap:10px;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.course-card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.course-card:hover{transform:translateY(-6px);box-shadow:0 14px 40px rgba(11,18,32,0.08)}
+.course-meta{display:flex;justify-content:space-between;align-items:center;gap:8px}
+
+/* Carousel */
+.carousel{position:relative;overflow:hidden;display:flex;align-items:center;gap:8px}
+.carousel-track{display:flex;gap:12px;transition:transform .35s ease}
+.carousel-prev, .carousel-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:none;padding:8px 10px;border-radius:8px;cursor:pointer;z-index:2}
+.carousel-prev{left:8px} .carousel-next{right:8px}
+
+/* Course detail */
+.course-detail{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.course-detail img{width:100%;border-radius:10px}
+.course-info h2{margin-top:0}
+.module-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.module{padding:10px;border-radius:8px;border:1px solid rgba(11,18,32,0.04);display:flex;justify-content:space-between;align-items:center}
+
+/* Footer */
+.site-footer{padding:12px 0;margin-top:32px;border-top:1px solid rgba(11,18,32,0.04);text-align:center;color:var(--muted)}
+
+/* small */
+.muted{color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:900px){
+  .course-detail{grid-template-columns:1fr; }
+  .hero-right{display:none}
+  .header-actions .search{display:none}
+}
+
+/* dark theme */
+body.dark{
+  --bg:#071027;
+  --card:#071a2b;
+  --text:#e6eef8;
+  --muted:#9aa8c3;
+  --primary:#4ea8ff;
+  --shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
