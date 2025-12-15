@@ -10,7 +10,7 @@ O objetivo do projeto é aplicar boas práticas de desenvolvimento front-end, or
 ## 🛠 Tecnologias Utilizadas
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript 
 - Bootstrap
 - Git & GitHub
 
